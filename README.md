@@ -1,2 +1,11 @@
-# ecommerce-logistics-analysis
-Analyze the impact of fuel price on e-commerce logistics and profit
+
+## 📷 Visualization
+
+### Profit by Scenario
+![Profit](images/profit.png)
+
+### Loss Rate by Scenario
+![Loss Rate](images/loss_rate.png)
+
+### Distance vs Profit
+![Distance vs Profit](images/distance_profit.png)
