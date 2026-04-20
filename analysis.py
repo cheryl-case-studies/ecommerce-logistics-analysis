@@ -18,7 +18,7 @@ print("成功讀取")
 print(df.shape)
 print(df.head())
 
-# 顯示前5筆
+# 顯示前5筆，head()預設5筆資料
 
 #專案正式開始
 df = df[~df['InvoiceNo'].str.startswith('C')]
@@ -43,7 +43,7 @@ print(df['UnitPrice'].min())   #確認數字>=0
 #模擬「配送距離」
 import numpy as np
 np.random.seed(42)
-# 每筆訂單隨機距離（1~30 km）增加到100 為了顯著
+# 每筆訂單隨機距離（1~100 km），用於模擬物流情境
 order_df['Distance_km'] = np.random.uniform(1, 100, len(order_df))
 
 print(order_df.head())
