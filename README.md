@@ -1,5 +1,9 @@
 # 🚚 E-commerce Logistics Profit Simulation under Fuel Cost Scenarios
 
+## 👤 Role
+Data Analyst (Personal Project)
+Responsible for data cleaning, simulation modeling, and business insights generation
+
 ## 📊 Project Overview
 
 This project analyzes the impact of fuel price changes on logistics cost and profit in an e-commerce setting.  
@@ -45,7 +49,13 @@ This dataset is used for educational and analytical purposes only.
 - Profit decreases as fuel cost increases  
 - Low margin significantly reduces profitability  
 - Worst-case scenario shows substantial profit decline  
-- Loss rate increases under high fuel and low margin conditions  
+- Loss rate increases under high fuel and low margin conditions
+
+  ### Key Metrics
+
+- Base Profit: ~136  
+- Worst Case Profit: ~31  
+- Loss Rate: 14% → 49%
 
 ## 💡 Business Insights
 
@@ -74,5 +84,5 @@ This dataset is used for educational and analytical purposes only.
 
 ## ⚙️ Assumptions
 
-- Delivery distance is simulated using a uniform distribution between 1 and 100 km  
-- This assumption is used to evaluate the impact of logistics cost under different scenarios  
+- Delivery distance is simulated using a uniform distribution (1–100 km) due to lack of real logistics data  
+- This simplification allows controlled scenario analysis of fuel cost impact  
