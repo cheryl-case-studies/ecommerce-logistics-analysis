@@ -159,30 +159,34 @@ print(risky_orders[['TotalPrice', 'Distance_km']].describe())
 #視覺化
 import matplotlib.pyplot as plt
 
+os.makedirs("images", exist_ok=True)
+
 #油價 vs 平均利潤
-plt.figure() #開新畫布(未被前資料影響)
+plt.figure(figsize=(6,4)) #開新畫布(未被前資料影響)
 summary.plot(kind='bar')
 plt.title("Profit under Fuel Price Scenarios")
 plt.ylabel("Average Profit")
 plt.xlabel("Scenario")
 plt.savefig("images/profit.png")  #先存 → 再 show，不然會空白
+plt.grid()
 plt.show(block=False)
 input("按 Enter 關閉圖表...")
 plt.close()
 
 #虧損訂單比例
-plt.figure() #開新畫布(未被前資料影響)
+plt.figure(figsize=(6,4))  #開新畫布(未被前資料影響)
 loss_rate.plot(kind='bar')
 plt.title("Loss Rate under Fuel Price Scenarios")
 plt.ylabel("Loss Rate")
 plt.xlabel("Scenario")
 plt.savefig("images/loss_rate.png")
+plt.grid()
 plt.show(block=False)
 input("按 Enter 關閉圖表...")
 plt.close()
 
 #距離 vs 利潤
-plt.figure() #開新畫布(未被前資料影響)
+plt.figure(figsize=(6,4))  #開新畫布(未被前資料影響)
 base_df = final_df[final_df['Scenario'] == 'Base']
 
 plt.scatter(base_df['Distance_km'], base_df['Profit'])
@@ -190,6 +194,20 @@ plt.xlabel("Distance (km)")
 plt.ylabel("Profit")
 plt.title("Distance vs Profit")
 plt.savefig("images/distance_profit.png")
+plt.grid()
+plt.show(block=False)
+input("按 Enter 關閉圖表...")
+plt.close()
+
+plt.figure(figsize=(6,4)) #開新畫布(未被前資料影響)
+
+plt.plot(summary_df["fuel_price"], summary_df["Profit"], marker='o')
+plt.xlabel("Fuel Price")
+plt.ylabel("Average Profit")
+plt.title("Impact of Fuel Cost on Profitability")
+plt.savefig("images/profit_vs_fuel.png")
+plt.grid()
+
 plt.show(block=False)
 input("按 Enter 關閉圖表...")
 plt.close()
@@ -238,7 +256,7 @@ import matplotlib.pyplot as plt
 # 把 summary 轉成 DataFrame（方便畫圖）
 summary_df = summary.reset_index()
 
-plt.figure() #開新畫布(未被前資料影響)
+plt.figure(figsize=(6,4))  #開新畫布(未被前資料影響)
 plt.plot(summary_df['Scenario'], summary_df['Profit'], marker='o')
 
 plt.title('Oil Price Impact on Profit')
