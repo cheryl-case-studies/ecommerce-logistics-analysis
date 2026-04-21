@@ -55,9 +55,9 @@ Through scenario analysis, businesses can proactively adjust pricing and operati
 
 ---
 
-## 7. Future Improvements
+## 7. Future Work
 
-- Incorporate real-world datasets for higher accuracy  
-- Add SQL-based data extraction and analysis
-- Build interactive dashboards (e.g., Tableau / Power BI)
+- Incorporate real-world datasets  
+- Apply SQL for data extraction  
+- Build dashboards using BI tools  
   
