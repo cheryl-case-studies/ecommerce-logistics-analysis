@@ -76,7 +76,7 @@ Used for simulation and analytical demonstration purposes
 
 ## 📊 Profit vs Fuel Price
 
-![Profit vs Fuel](visuals/profit_vs_fuel.png)
+![Profit vs Fuel](images/profit_vs_fuel.png)
 
 *Figure 1: Impact of fuel price changes on profitability*
 This chart shows that as fuel prices increase, profitability declines, indicating that fuel cost is a key driver of logistics performance.
