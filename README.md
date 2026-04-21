@@ -117,7 +117,7 @@ Used for simulation and analytical demonstration purposes
 
 ### Distance vs Profit
 ![Distance vs Profit](images/distance_profit.png)  
-*Figure 4: Relationship between delivery distance and profitability
+*Figure 4: Relationship between delivery distance and profitability*
 
 ## ⚙️ Assumptions
 
